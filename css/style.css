@@ -1,11 +1,17 @@
 /* Navbar */
 
 /* jumbotron header */
-.jumbotronName{
+.jumbotronName {
     margin-top: 3rem;
 }
 
 /* Les meilleur cuisine calédonienne du moments */
-.container_title-h3{
+.container_title-h3 {
     font-size: 1em;
+}
+
+/* Coin des cuisine calédonienne */
+
+.container_card-body_button:hover {
+    color: white;
 }
