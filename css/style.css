@@ -1,10 +1,18 @@
 /* Navbar */
 
+
 /* jumbotron header */
 .jumbotronName {
+    background-color: none;
     margin-top: 3rem;
+    background: linear-gradient(to top, #335, #fff 0%, #EEE 91%, #333 125%);
 }
-
+.fontCuisine{
+    src: url('font/hotpizza.ttf'); 
+}
+.largeTexte{
+    font-size: larger !important;
+}
 /* Les meilleur cuisine calédonienne du moments */
 .container_title-h3 {
     font-size: 1em;
@@ -14,4 +22,7 @@
 
 .container_card-body_button:hover {
     color: white;
+}
+.backgroundGradient{
+    background: linear-gradient(to bottom, #333, #fff 0%, #eee 23%, #333 272%);
 }

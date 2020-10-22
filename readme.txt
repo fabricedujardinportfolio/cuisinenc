@@ -20,7 +20,8 @@ puisant son inspiration dans la gastronomie française, mélanésienne,
  aime présenter cette salade dans une coque de noix de coco pour 
  rappeler les arômes dominants.
 
- 
+SALADE d’IGNAME:
+ SALADE d’IGNAME PIEMONTAISE (CUISINE CALEDONIENNE-BROUSSARDE)
  
  
  PLATS : 
