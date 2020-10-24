@@ -16,720 +16,823 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo/favicon-cuisine-caledonienne.png">
 </head>
 
 <body>
     <main>
-    <!-- Navbar -->
-    <div
-        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 fixed-top bg-white border-bottom box-shadow">
-        <h5 class="my-0 mr-md-auto font-weight-normal text-capitalize">cuisine calédonienne</h5>
-        <nav class="my-2 my-md-0 mr-md-3" id="#top">
-            <a class="p-2 text-dark text-uppercase" href="#entrees">entrées</a>
-            <a class="p-2 text-dark text-uppercase" href="#plats">plats</a>
-            <a class="p-2 text-dark text-uppercase" href="#desserts">desserts</a>
-            <a class="p-2 text-dark text-uppercase" href="#cuisines">cuisines</a>
-        </nav>
-    </div>
-    <!-- jumbotron header -->
-    <div class="jumbotron jumbotronName bg-gradient-primary">
-        <div class="container">
-            <h1 class="display-4 text-center">La meilleur des Cuisine Calédonienne</h1>
-            <p class="text-center largeTexte">This is a template for a simple marketing or informational website. It includes a
-                large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to
-                create something more unique.</p>
-            <p class="text-center">
-                <a href="tel:975816" role="button" id="cuisines">
-                    <button type="button" class="btn btn-primary btn-lg">
-                        contactez-nous pour rajouter <br>votre recette calédonienne.
-                    </button>
-                </a>
-            </p>
+        <!-- Navbar -->
+        <div
+            class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 fixed-top bg-white border-bottom box-shadow navBarGradient">
+            <h5 class="my-0 mr-md-auto font-weight-normal text-capitalize" onclick=window.location.href='index.html'>
+                cuisine calédonienne</h5>
+            <nav class="my-2 my-md-0 mr-md-3" id="#top">
+                <a class="p-2 text-dark text-uppercase" href="#entrees">entrées</a>
+                <a class="p-2 text-dark text-uppercase" href="#plats">plats</a>
+                <a class="p-2 text-dark text-uppercase" href="#desserts">desserts</a>
+                <a class="p-2 text-dark text-uppercase" href="#cuisines">cuisines</a>
+            </nav>
         </div>
-    </div>
-    <!-- Container des meilleur cuisine calédonienne du moments -->
-    <div class="container backgroundGradientUp">
-        <div class="row">
-            <div class="col-md-4">
-                <h2 class="text-capitalize">Meilleur entrées</h2>
-                <h3 class="text-uppercase container_title-h3">La salade tahitienne</h3>
-                <p>C’est une composition colorée et très prisée en Nouvelle Calédonie. Cette salade sucrée-salée, qu’on
-                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la marinade au
-                    citron. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">Voir les détails »</a></p>
+        <!-- jumbotron header -->
+        <div class="jumbotron jumbotronName bg-gradient-primary text-white">
+            <div class="container containerOpacity">
+                <div class="logo-header text-center">
+                    <img src="img/logo/logo-cuisine-caledonienne.png"
+                        alt="cette image représente le logo de cuisine calédonienne à nouméa">
+                </div>
+                <h1 class="display-4 text-center textOpacity">La meilleur des Cuisine Calédonienne</h1>
+                <p class="text-center largeTexte textOpacity">Sur les cuisine calédonienne, les chefs de cuisine ce sont
+                    vous et moi.<br> Et il y a de l’intérêt en la matière.
+                    Au menu soupe de crevettes calédoniennes au lait de coco, poulet frit croustillant au citron, bougna
+                    poulet marmite, tripes du caillou, frites pimentées au black soy et encore énormément de recette
+                    calédonienne .</p>
             </div>
-            <div class="col-md-4">
-                <h2 class="text-capitalize">Meilleur plats</h2>
-                <h3 class="text-uppercase container_title-h3">Le bougna</h3>
-                <p>Le bougna est le plat traditionnel kanak. Sa présentation ludique indique à elle seule que l’on se
-                    trouve face à une recette typique. En effet, le bougna prend la forme de grosses papillotes
-                    composées de feuilles de bananiers et maintenues avec une liane. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">Voir les détails »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2 class="text-capitalize">Meilleur desserts</h2>
-                <h3 class="text-uppercase container_title-h3">po’é</h3>
-                <p>Connaissez-vous le « po’é » ? Vous trouverez ce gâteau typique sur les marchés de l’île. Sa texture
-                    fondante et envoûtante s’explique par le mélange de farine de manioc et de purée de fruits (banane
-                    ou citrouille).</p>
-                <p><a class="btn btn-secondary" href="#" role="button" id="entrees">Voir les détails »</a></p>
-            </div>
-        </div>
-        <hr>
-    </div>
-    <!-- Coin des cuisine calédonienne -->
-    <div class="album py-5 bg-light backgroundGradient">
-        <div class="container">
-            <h3 class="text-uppercase ">entrees calédonienne :</h3>
-            <div class="row">
-                <!-- Cuisine d'entrées -->
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg"
-                            alt="Cette image représente un plat de salade tahitienne de la cuisine calédonienne">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/entree/salade-tahitienne.html"
-                                        class="container_card-body_button"><button type="button"
-                                            class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Cuisine de plats -->
-            <h3 class="text-uppercase" id="plats">plats calédonien :</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/saute-de-cerf-cuisine-caledonienne.jpg"
-                            alt="Cette image représente  un plat de sauteé de cerfs de la cuisine calédonienne">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>Sauté de cerf à la calédonienne</h3>
-                            <p class="card-text">Il y a beaucoup de cerfs en Calédonie, le
-                                problème est qu'elle a une forte odeur et qu'elle reste sèche. De base la viande
-                                reste sèche à mon goût mais J'ai trouvé cette recette, c'était la dernière chance,
-                                on s'est régalé cette fois.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/plats/saute-de-cerf-caledonienne.html"
-                                        class="container_card-body_button"><button type="button"
-                                            class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Cuisine de plats -->
-            <h3 class="text-uppercase" id="desserts">Desserts calédonien :</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/Poe-a-la-citrouille-cuisine-caledonienne.jpg"
-                            alt="Cette image représente un plat de Poé a la citrouille pour la cuisine calédonienne">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a
-                                            href="pages/desserts/Poe-a-la-citrouille.html">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">desserts</li>
-                                </ol>
-                            </nav>
-                            <h3>Poé a la citrouille</h3>
-                            <p class="card-text">Le poé est un plats tahitien. Le poé se sert froid en désert ou en
-                                accompagnement par exemple avec de la viande ou de la salade poisson.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]"
-                            style="height: 300px; width: 100%; display: block;"
-                            src="img/salade-tahitienne-cuisine-caledonienne.jpg">
-                        <div class="card-body">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb ">
-                                    <li>
-                                        <h3 class="text-capitalize">catégorie:<br></h3>
-                                    </li>
-                                    <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees</li>
-                                </ol>
-                            </nav>
-                            <h3>La salade tahitienne</h3>
-                            <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
-                                Cette salade sucrée-salée, qu’on
-                                appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la
-                                marinade au
-                                citron.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="pages/salade-tahitienne.html" class="container_card-body_button"><button
-                                            type="button" class="btn btn-sm btn-outline-primary">
-                                            Lire</button>
-                                    </a>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">
-                <p class="text-info text-center ">Conçu et construit avec tout l'ambition du monde par <a
-                        href="https://fabricedujardinportfolio.github.io/" class="text-primary">@fabrice</a>
+            <div class="container">
+                <p class="text-center ">
+                    <a href="tel:975816" role="button" id="cuisines">
+                        <button type="button" class="btn btn-primary btn-lg buttonJumbotron">
+                            contactez-nous pour rajouter <br>votre recette calédonienne.
+                        </button>
+                    </a>
                 </p>
-                <p class="text-center">
-                    <button type="button" class="btn btn-outline-primary">
-                        <a href="#top" class="text-dark text-decoration-none">
-                            back to top
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-short"
-                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z">
-                                </path>
-                            </svg>
-                        </a> </button>
-            </span>
+            </div>
         </div>
-    </footer>
+        <!-- Container des meilleur cuisine calédonienne du moments -->
+        <div class="container backgroundGradientUp">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-capitalize">Meilleur entrées</h2>
+                    <h3 class="text-uppercase container_title-h3">La salade tahitienne</h3>
+                    <div class="bodycontainerImageEffect">
+                        <div class="containerImageEffect">
+                            <img src="img/salade-tahitienne-cuisine-caledonienne.jpg"
+                                alt="cette image représente une cuisine calédonienne qui est une salade tahitienne "
+                                onclick=window.location.href='img/salade-tahitienne-cuisine-caledonienne.jpg'
+                                class="imageShadow">
+                            <img src="img/salade-tahitienne-cuisine-caledonienne.jpg" alt="cette image représente une cuisine calédonienne qui est une salade tahitienne
+                                " onclick=window.location.href='img/salade-tahitienne-cuisine-caledonienne.jpg'>
+                            <img src="img/salade-tahitienne-cuisine-caledonienne.jpg" alt="cette image représente une cuisine calédonienne qui est une salade tahitienne
+                                " onclick=window.location.href='img/salade-tahitienne-cuisine-caledonienne.jpg'>
+                        </div>
+                    </div>
+                    <p>C’est une composition colorée et très prisée en Nouvelle Calédonie. Cette salade sucrée-salée,
+                        qu’on
+                        appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec la marinade
+                        au
+                        citron. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Voir les détails »</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-capitalize">Meilleur plats</h2>
+                    <h3 class="text-uppercase container_title-h3">Le bougna</h3>
+                    <div class="bodycontainerImageEffect">
+                        <div class="containerImageEffect">
+                            <img src="img/bougna-cuisine-caledonienne.jpg"
+                                alt="cette image représente une cuisine calédonienne qui est un bougna "
+                                onclick=window.location.href='img/bougna-cuisine-caledonienne.jpg' class="imageShadow">
+                            <img src="img/bougna-cuisine-caledonienne.jpg"
+                                alt="cette image représente une cuisine calédonienne qui est un bougna "
+                                onclick=window.location.href='img/bougna-cuisine-caledonienne.jpg'>
+                            <img src="img/bougna-cuisine-caledonienne.jpg"
+                                alt="cette image représente une cuisine calédonienne qui est un bougna "
+                                onclick=window.location.href='img/bougna-cuisine-caledonienne.jpg'>
+                        </div>
+                    </div>
+                    <p>Le bougna est le plat traditionnel kanak. Sa présentation ludique indique à elle seule que l’on
+                        se
+                        trouve face à une recette typique. En effet, le bougna prend la forme de grosses papillotes
+                        composées de feuilles de bananiers et maintenues avec une liane. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Voir les détails »</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-capitalize">Meilleur desserts</h2>
+                    <h3 class="text-uppercase container_title-h3">po’é</h3>
+                    <div class="bodycontainerImageEffect">
+                        <div class="containerImageEffect">
+                            <img src="img/Poe-a-la-citrouille-cuisine-caledonienne.jpg" alt="cette image représente une cuisine calédonienne qui est un Poe
+                                " onclick=window.location.href='img/Poe-a-la-citrouille-cuisine-caledonienne.jpg'
+                                class="imageShadow">
+                            <img src="img/Poe-a-la-citrouille-cuisine-caledonienne.jpg" alt="cette image représente une cuisine calédonienne qui est un Poe
+                                " onclick=window.location.href='img/Poe-a-la-citrouille-cuisine-caledonienne.jpg'>
+                            <img src="img/Poe-a-la-citrouille-cuisine-caledonienne.jpg" alt="cette image représente une cuisine calédonienne qui est un Poe
+                                " onclick=window.location.href='img/Poe-a-la-citrouille-cuisine-caledonienne.jpg'>
+                        </div>
+                    </div>
+                    <p>Connaissez-vous le « po’é » ? Vous trouverez ce gâteau typique sur les marchés de l’île. Sa
+                        texture
+                        fondante et envoûtante s’explique par le mélange de farine de manioc et de purée de fruits
+                        (banane
+                        ou citrouille).</p>
+                    <p><a class="btn btn-secondary" href="#" role="button" id="entrees">Voir les détails »</a></p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- Coin des cuisine calédonienne -->
+        <div class="album py-5 bg-light backgroundGradient">
+            <div class="container">
+                <h3 class="text-uppercase ">entrees calédonienne :</h3>
+                <div class="row">
+                    <!-- Cuisine d'entrées -->
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg"
+                                alt="Cette image représente un plat de salade tahitienne de la cuisine calédonienne">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/entree/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuisine de plats -->
+                <h3 class="text-uppercase" id="plats">plats calédonien :</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/saute-de-cerf-cuisine-caledonienne.jpg"
+                                alt="Cette image représente  un plat de sauteé de cerfs de la cuisine calédonienne">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>Sauté de cerf à la calédonienne</h3>
+                                <p class="card-text">Il y a beaucoup de cerfs en Calédonie, le
+                                    problème est qu'elle a une forte odeur et qu'elle reste sèche. De base la viande
+                                    reste sèche à mon goût mais J'ai trouvé cette recette, c'était la dernière chance,
+                                    on s'est régalé cette fois.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/plats/saute-de-cerf-caledonienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuisine de plats -->
+                <h3 class="text-uppercase" id="desserts">Desserts calédonien :</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/Poe-a-la-citrouille-cuisine-caledonienne.jpg"
+                                alt="Cette image représente un plat de Poé a la citrouille pour la cuisine calédonienne">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a
+                                                href="pages/desserts/Poe-a-la-citrouille.html">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">desserts
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>Poé a la citrouille</h3>
+                                <p class="card-text">Le poé est un plats tahitien. Le poé se sert froid en désert ou en
+                                    accompagnement par exemple avec de la viande ou de la salade poisson.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                style="height: 300px; width: 100%; display: block;"
+                                src="img/salade-tahitienne-cuisine-caledonienne.jpg">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb ">
+                                        <li>
+                                            <h3 class="text-capitalize">catégorie:<br></h3>
+                                        </li>
+                                        <li class="breadcrumb-item "><a href="#">cuisine-caledonienne</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-uppercase" aria-current="page">entrees
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3>La salade tahitienne</h3>
+                                <p class="card-text">C’est une composition colorée et très prisée en Nouvelle Calédonie.
+                                    Cette salade sucrée-salée, qu’on
+                                    appelle aussi « poisson cru à la tahitienne » nécessite un temps de préparation avec
+                                    la
+                                    marinade au
+                                    citron.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="pages/salade-tahitienne.html"
+                                            class="container_card-body_button"><button type="button"
+                                                class="btn btn-sm btn-outline-primary">
+                                                Lire</button>
+                                        </a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">
+                    <p class="text-info text-center ">Conçu et construit avec tout l'ambition du monde par <a
+                            href="https://fabricedujardinportfolio.github.io/" class="text-primary">@fabrice</a>
+                    </p>
+                    <p class="text-center">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a href="#top" class="text-dark text-decoration-none">
+                                back to top
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-short"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z">
+                                    </path>
+                                </svg>
+                            </a> </button>
+                </span>
+            </div>
+        </footer>
+        <script>
+        </script>
 </body>
 
 </html>

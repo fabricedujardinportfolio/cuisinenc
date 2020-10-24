@@ -1,21 +1,99 @@
 /* Navbar */
-
+.navBarGradient {
+    background: linear-gradient(to top, #394, #fff 02.2%, #eee 71%, #333 266%);
+}
 
 /* jumbotron header */
 .jumbotronName {
     background-color: none;
     margin-top: 3rem;
     background: linear-gradient(to top, #335, #fff 0%, #EEE 91%, #333 125%);
+    background-image: url("../img/plats-cuisine-caledonienne.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
 }
-.fontCuisine{
-    src: url('font/hotpizza.ttf'); 
+
+.containerOpacity {
+    opacity: 0.6;
+    background-color: #fff;
 }
-.largeTexte{
+
+.textOpacity {
+    margin: 1.5%;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.fontCuisine {
+    src: url('font/hotpizza.ttf');
+}
+
+.largeTexte {
     font-size: larger !important;
 }
+
 /* Les meilleur cuisine calédonienne du moments */
 .container_title-h3 {
     font-size: 1em;
+}
+
+.bodycontainerImageEffect {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.containerImageEffect {
+    position: relative;
+    width: 150px;
+    /* height: 100px; */
+    /* margin-top: 150px; */
+    margin-bottom: 80px;
+    background: rgba(0, 0, 0, 0);
+    transform: rotate(-30deg) skew(25deg) scale(.8);
+    transition: 0.5s;
+}
+
+.containerImageEffect img {
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.containerImageEffect:hover img:nth-child(4) {
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+
+.containerImageEffect:hover img:nth-child(3) {
+    transform: translate(120px, -120px);
+    opacity: .8;
+}
+
+.containerImageEffect:hover img:nth-child(2) {
+    transform: translate(80px, -80px);
+    opacity: .6;
+}
+
+.containerImageEffect:hover img:nth-child(1) {
+    transform: translate(40px, -40px);
+    opacity: .4;
+}
+
+.imageShadow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: -1px 24px 18px #888888;
 }
 
 /* Coin des cuisine calédonienne */
@@ -23,6 +101,25 @@
 .container_card-body_button:hover {
     color: white;
 }
-.backgroundGradient{
+
+.backgroundGradient {
     background: linear-gradient(to bottom, #333, #fff 0%, #eee 23%, #333 272%);
+}
+
+@media only screen and (max-width: 380px) {
+    .jumbotronName {
+        margin-top: 6rem;
+    }
+
+    .bodycontainerImageEffect {
+        text-align: left;
+    }
+
+    .textOpacity {
+        font-size: 43px;
+    }
+
+    .buttonJumbotron {
+        font-size: 1em;
+    }
 }
