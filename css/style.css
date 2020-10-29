@@ -1,6 +1,25 @@
+body {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-site {
+    color: #e28a65;
+}
+
+.text-site-hover:hover {
+    color: #f16a30;
+    font-weight: 900;
+}
+
+
 /* Navbar */
 .navBarGradient {
-    background: linear-gradient(to top, #394, #fff 02.2%, #eee 71%, #333 266%);
+    background: linear-gradient(to top, #394, #252323 02.2%, #000 71%, #000 266%);
 }
 
 /* jumbotron header */
@@ -17,8 +36,24 @@
 
 }
 
+.lienDecorationOff {
+    text-decoration: none !important;
+}
+
+.border-link-oronge {
+    border: 1px solid #F07037;
+    background-color: #f16a30;
+}
+
+.border-link-oronge:active {
+    background-color: #9e6b55;
+}
+
+
+
+
 .containerOpacity {
-    opacity: 0.6;
+    opacity: 0.83;
     background-color: #fff;
 }
 
@@ -40,6 +75,18 @@
 /* Les meilleur cuisine calédonienne du moments */
 .container_title-h3 {
     font-size: 1em;
+}
+
+.tailletitresecondaire-padding {
+    padding-top: 50px;
+}
+
+.p-justify {
+    text-align: justify;
+}
+
+.p-center {
+    text-align: center;
 }
 
 .bodycontainerImageEffect {
@@ -106,6 +153,24 @@
     background: linear-gradient(to bottom, #333, #fff 0%, #eee 23%, #333 272%);
 }
 
+footer {
+    color: #fff;
+    position: fixed;
+    bottom: -15px;
+    width: 100%;
+    background-color: gray;
+}
+
+.boutonfooter {
+    background-color: #25C3F9;
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 2.5rem 2rem;
+    }
+}
+
 @media only screen and (max-width: 380px) {
     .jumbotronName {
         margin-top: 6rem;
@@ -116,10 +181,18 @@
     }
 
     .textOpacity {
-        font-size: 43px;
+        font-size: 35px;
     }
 
     .buttonJumbotron {
         font-size: 1em;
+    }
+
+    .border-link-oronge {
+        font-size: 0.7em;
+    }
+
+    .tailletitresecondaire {
+        font-size: 1.3em;
     }
 }
