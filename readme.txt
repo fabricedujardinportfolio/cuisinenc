@@ -26,6 +26,9 @@ SALADE d’IGNAME:
  
  PLATS : 
 
+soupe de crevettes calédoniennes :
+Un plat presque traditionnel en Nouvelle-Calédonie, un pays où l'aquaculture 
+de crevettes est implantée. 
 
 Bougnat:
 Impossible d’évoquer la gastronomie de Nouvelle-Calédonie sans parler
