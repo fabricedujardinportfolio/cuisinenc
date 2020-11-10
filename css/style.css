@@ -8,11 +8,12 @@ html {
 }
 
 .text-site {
-
     color: #f16a30;
     font-weight: 900;
 }
-
+.tailleTitlle{
+    font-size: 1.2em;
+}
 .text-site-hover:hover {
     color: #e28a65;
 }
@@ -34,7 +35,7 @@ html {
 }
 
 .from-bottom {
-    transform: translate(0px, 3tar0px);
+    transform: translate(0px, 30px);
 }
 
 .from-left {
@@ -189,12 +190,24 @@ footer {
     background-color: #25C3F9;
 }
 
-@media (min-width: 576px) {
-    .jumbotron {
-        padding: 2.5rem 2rem;
+@media (min-width: 1800px){
+    .containerOpacity {
+        margin-top: 8%;
+    }
+    .jumbotronName{
+        height: 100vh;
     }
 
+@media (max-width: 1200px){
+    .containerOpacity {
+        margin-top: 3%;
+    }    
+}
 
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 0.7rem 2rem;
+    }
 }
 
 @media only screen and (max-width: 420px) {
