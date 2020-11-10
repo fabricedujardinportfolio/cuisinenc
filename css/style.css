@@ -11,14 +11,18 @@ html {
     color: #f16a30;
     font-weight: 900;
 }
-.tailleTitlle{
+
+.tailleTitlle {
     font-size: 1.2em;
 }
+
 .text-site-hover:hover {
     color: #e28a65;
 }
 
+
 /* scrool effect left and right*/
+
 .from-right,
 .from-left {
     opacity: 0;
@@ -42,14 +46,17 @@ html {
     transform: translate(-50px, -30px);
 }
 
+
 /* Navbar */
+
 .navBarGradient {
     background: linear-gradient(to top, #394, #252323 02.2%, #000 71%, #000 266%);
 }
 
+
 /* jumbotron header */
+
 .jumbotronName {
-    background-color: none;
     margin-top: 3rem;
     background: linear-gradient(to top, #335, #fff 0%, #EEE 91%, #333 125%);
     background-image: url("../img/plats-cuisine-caledonienne.jpg");
@@ -57,8 +64,6 @@ html {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-
-
 }
 
 .lienDecorationOff {
@@ -73,9 +78,6 @@ html {
 .border-link-oronge:active {
     background-color: #9e6b55;
 }
-
-
-
 
 .containerOpacity {
     opacity: 0.83;
@@ -97,7 +99,9 @@ html {
     font-size: larger !important;
 }
 
+
 /* Les meilleur cuisine calédonienne du moments */
+
 .container_title-h3 {
     font-size: 1em;
 }
@@ -128,8 +132,6 @@ html {
 .containerImageEffect {
     position: relative;
     width: 150px;
-    /* height: 100px; */
-    /* margin-top: 150px; */
     margin-bottom: 80px;
     background: rgba(0, 0, 0, 0);
     transform: rotate(-30deg) skew(25deg) scale(.8);
@@ -168,6 +170,7 @@ html {
     box-shadow: -1px 24px 18px #888888;
 }
 
+
 /* Coin des cuisine calédonienne */
 
 .container_card-body_button:hover {
@@ -190,23 +193,32 @@ footer {
     background-color: #25C3F9;
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1800px) {
     .containerOpacity {
         margin-top: 8%;
     }
-    .jumbotronName{
+    .jumbotronName {
         height: 100vh;
     }
-
-@media (max-width: 1200px){
-    .containerOpacity {
-        margin-top: 3%;
-    }    
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1500px) {
+    .containerOpacity {
+        margin-top: 3%;
+    }
+    .jumbotronName {
+        height: 100vh;
+        padding-bottom: 5%;
+    }
     .jumbotron {
-        padding: 0.7rem 2rem;
+        padding: 0.1rem 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .jumbotronName {
+        height: auto;
+        padding-bottom: 5%;
     }
 }
 
@@ -214,11 +226,9 @@ footer {
     .logo-header>img {
         height: 320px;
     }
-
     .tailletitresecondaire {
         font-size: 1.3em;
     }
-
     .textOpacity {
         font-size: 45px;
     }
@@ -228,27 +238,24 @@ footer {
     .jumbotronName {
         margin-top: 6rem;
     }
-
     .logo-header>img {
         height: 280px;
     }
-
     .bodycontainerImageEffect {
         text-align: left;
     }
-
+    .textCentre {
+        text-align: center;
+    }
     .textOpacity {
         font-size: 35px;
     }
-
     .buttonJumbotron {
         font-size: 1em;
     }
-
     .border-link-oronge {
         font-size: 0.7em;
     }
-
     .tailletitresecondaire {
         font-size: 1.3em;
     }
@@ -257,5 +264,11 @@ footer {
 @media only screen and (max-width: 340px) {
     .logo-header>img {
         height: auto;
+    }
+    .textOpacity {
+        font-size: 25px;
+    }
+    .paddingUnique {
+        padding-bottom: 40px;
     }
 }
